@@ -4,13 +4,6 @@ author: "James"
 format: html
 editor: visual
 ---
-
-```{r}
-install.packages("ggplot2")
-install.packages("palmerpenguins")
-```
-
-
 ```{r}
 library(palmerpenguins)
 data(palmerpenguins)
@@ -23,4 +16,7 @@ library(ggplot2)
 ggplot(data=penguins, aes(x=flipper_length_mm, y=body_mass_g))+geom_point()
 ```
 
+```{r}
+renv::snapshot()
+```
 
